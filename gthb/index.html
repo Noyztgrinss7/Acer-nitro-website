@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#06060a">
+<title>NITRO//X — Acer Nitro Gaming Laptop</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="loader"><b>NITRO</b><i></i></div>
+<div class="curtain"></div>
+<div class="progress"></div>
+<div id="glow"></div>
+<canvas id="fx"></canvas>
+
+<header class="nav">
+  <a class="logo" href="index.html">NITRO<span>//</span>X</a>
+  <nav class="links">
+    <a href="index.html" class="active">Home</a>
+    <a href="features.html">Features</a>
+    <a href="performance.html">Performance</a>
+    <a href="models.html">Models</a>
+  </nav>
+  <div class="nav-right">
+    <button class="turbo-btn" aria-pressed="false" title="Toggle turbo mode">⚡ Turbo</button>
+    <button class="burger" aria-label="Menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<main>
+  <!-- ===== STICKY SPINNING LAPTOP ===== -->
+  <section class="stage" id="stage">
+    <div class="sticky">
+      <div class="bgword">NITRO</div>
+      <div class="rings"><i></i><i></i><i></i></div>
+      <div class="scene" data-laptop="scroll"></div>
+
+      <div class="cap top active">
+        <p class="eyebrow">Gaming laptop showcase</p>
+        <h1>ACER <span class="grad">NITRO</span></h1>
+        <p class="lead">Scroll down. The laptop stays put and spins — every turn reveals more.</p>
+      </div>
+      <div class="cap l">
+        <p class="eyebrow">01 · Display</p>
+        <h2>Silky <span class="grad">165Hz</span> motion</h2>
+        <p class="lead">High refresh rate screens make every flick shot, drift and parry feel instant.</p>
+      </div>
+      <div class="cap r">
+        <p class="eyebrow">02 · Cooling</p>
+        <h2>Dual fans. <span class="grad">Zero</span> throttle fear.</h2>
+        <p class="lead">Twin fans and copper heat pipes keep your frame rate steady in long sessions.</p>
+      </div>
+      <div class="cap l">
+        <p class="eyebrow">03 · Keyboard</p>
+        <h2>RGB that <span class="grad">breathes</span></h2>
+        <p class="lead">Backlit keys, a dedicated Turbo key and a layout built for WASD marathons.</p>
+      </div>
+      <div class="cap r">
+        <p class="eyebrow">04 · Power</p>
+        <h2>RTX-class <span class="grad">graphics</span></h2>
+        <p class="lead">Ray tracing, DLSS and next-gen titles at high settings — on the move.</p>
+      </div>
+      <div class="cap bottom">
+        <p class="eyebrow">Ready?</p>
+        <h2>Time to <span class="grad">dominate</span></h2>
+        <div class="row" style="justify-content:center">
+          <a class="btn mag" href="models.html">Explore models</a>
+          <a class="btn ghost mag" href="features.html">See features</a>
+        </div>
+      </div>
+
+      <div class="hint"><i></i>Scroll</div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee"><div>
+    <span>Play hard</span><span>165Hz</span><span>RGB keys</span><span>Dual fans</span><span>Turbo key</span><span>Ray tracing</span><span>Play hard</span><span>165Hz</span><span>RGB keys</span><span>Dual fans</span><span>Turbo key</span><span>Ray tracing</span>
+  </div></div>
+
+  <!-- ===== WHY ===== -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="center reveal">
+        <p class="eyebrow">Built different</p>
+        <h2>Everything a gamer <span class="grad">actually needs</span></h2>
+        <p class="lead">Hover the cards. They love attention.</p>
+      </div>
+      <div class="grid" style="margin-top:50px">
+        <div class="reveal" style="--d:.0s"><div class="card tilt"><span class="ico">🎮</span><h3>Made for games</h3><p>Dedicated graphics and a fast processor tuned for modern titles.</p></div></div>
+        <div class="reveal" style="--d:.1s"><div class="card tilt"><span class="ico">❄️</span><h3>Cool under fire</h3><p>Dual-fan cooling pushes air out so clocks stay high and temps stay low.</p></div></div>
+        <div class="reveal" style="--d:.2s"><div class="card tilt"><span class="ico">🌈</span><h3>RGB keyboard</h3><p>Backlit keys with lighting effects that match your setup and mood.</p></div></div>
+        <div class="reveal" style="--d:.1s"><div class="card tilt"><span class="ico">⚡</span><h3>Turbo key</h3><p>One press to jump to max performance mode when the match gets serious.</p></div></div>
+        <div class="reveal" style="--d:.2s"><div class="card tilt"><span class="ico">🔊</span><h3>Immersive sound</h3><p>Tuned audio so footsteps, explosions and music all land the right way.</p></div></div>
+        <div class="reveal" style="--d:.3s"><div class="card tilt"><span class="ico">🔌</span><h3>Plenty of ports</h3><p>Connect your mouse, headset, monitor and storage without a dongle pile.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HORIZONTAL SLIDES ===== -->
+  <section class="hscroll">
+    <div class="sticky">
+      <div class="hhead">Inside the beast — keep scrolling →</div>
+      <div class="htrack">
+        <article class="slide">
+          <div class="txt"><div class="num">01</div><h3>Buttery display</h3><p>High refresh rates make fast action look smooth instead of smeared.</p></div>
+          <div class="art"><div class="pl"><span class="pulse"></span><span class="pulse"></span><span class="pulse"></span><div class="big-hz grad">165Hz</div></div></div>
+        </article>
+        <article class="slide">
+          <div class="txt"><div class="num">02</div><h3>Twin fan cooling</h3><p>Two fans pull cool air in and push hot air out, around the clock.</p></div>
+          <div class="art"><div class="pl"><div class="fans"><div class="fan"></div><div class="fan"></div></div></div></div>
+        </article>
+        <article class="slide">
+          <div class="txt"><div class="num">03</div><h3>RGB wave keys</h3><p>Rainbow ripples across the keyboard — or pick one color and stay in the zone.</p></div>
+          <div class="art flat"><div class="pl"><div class="kb"></div></div></div>
+        </article>
+        <article class="slide">
+          <div class="txt"><div class="num">04</div><h3>Loud &amp; clear audio</h3><p>Hear enemies before you see them. Crisp highs, punchy lows.</p></div>
+          <div class="art"><div class="pl"><div class="eq"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i></div></div></div>
+        </article>
+        <article class="slide">
+          <div class="txt"><div class="num">05</div><h3>Fast charging</h3><p>Plug in between rounds and get back in the game sooner.</p></div>
+          <div class="art"><div class="pl"><div class="power"><b>⚡</b></div></div></div>
+        </article>
+      </div>
+      <div class="hbar"><i></i></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="stats">
+        <div class="stat reveal" data-anim="zoom"><b data-count="165" data-suffix="Hz">0</b><span>Refresh rate (up to)</span></div>
+        <div class="stat reveal" data-anim="zoom" style="--d:.1s"><b data-count="2" data-suffix="x">0</b><span>Cooling fans</span></div>
+        <div class="stat reveal" data-anim="zoom" style="--d:.2s"><b data-count="75" data-suffix="+">0</b><span>RGB keys</span></div>
+        <div class="stat reveal" data-anim="zoom" style="--d:.3s"><b data-count="100" data-suffix="%">0</b><span>Gamer energy</span></div>
+      </div>
+      <p class="note" style="color:var(--muted);font-size:.8rem;margin-top:30px;text-align:center">Specs vary by model and region. Always check the exact configuration before buying.</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="sec" style="padding-top:20px">
+    <div class="wrap">
+      <div class="cta reveal" data-anim="zoom">
+        <p class="eyebrow">Level up</p>
+        <h2 style="font-size:clamp(2.2rem,6vw,4.6rem)">Press the <span class="grad">Turbo</span> button</h2>
+        <p class="lead" style="margin:auto">Try the ⚡ Turbo button in the top bar — the whole site speeds up, just like the laptop.</p>
+        <div class="row"><a class="btn mag" href="performance.html">See performance</a><a class="btn ghost mag" href="models.html">Pick your Nitro</a></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <a class="logo" href="index.html">NITRO<span>//</span>X</a>
+  Fan-made showcase page. Acer and Nitro are trademarks of Acer Inc. — not affiliated with Acer.
+</footer>
+</body>
+</html>
